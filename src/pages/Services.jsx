@@ -1,7 +1,9 @@
+import ChoosePlanSection from "../components/Home/ChoosePlanSection";
+
 function Services() {
   return (
-    <div className="bg-[#1F283B] py-8 px-12 rounded-lg">
-      <h4 className="text-[22px] text-white text-center">This is Services Page</h4>
+    <div>
+      <ChoosePlanSection />
     </div>
   );
 }

@@ -32,8 +32,8 @@ function ReviewSection() {
     },
   ];
   return (
-    <div className="mt-28 py-28 relative bg-gradient-to-r from-white via-[#F5FCCE] to-[#FCFEF2]">
-      <div className="bg-[#e05d5d] rounded-full border-8 border-white absolute top-[-25px] left-1/2">
+    <div className="mt-28 mb-10 py-28 relative bg-gradient-to-r from-white via-[#F5FCCE] to-[#FCFEF2] md:mx-10 lg:mx-[85px] xl:mx-[120px] py-8 sm:py-0 md:py-[72px]  md:rounded-[20px] lg:rounded-[35px]">
+      <div className="bg-[#e05d5d] rounded-full border-8 border-white absolute top-[-25px] ms-[-35px] left-1/2">
         <div className="flex justify-center items-center w-14 h-14 rounded-full">
           <img
             src={quoteImg}
@@ -42,7 +42,7 @@ function ReviewSection() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-x-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
         {reviews.map((review) => (
           <ReviewSingle key={review._id} singleReview={review} />
         ))}
